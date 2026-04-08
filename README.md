@@ -24,77 +24,7 @@ This project implements a state-of-the-art forecasting system for COVID-19 cases
 
 Project Structure
 
-
-disease-dynamics-analysis/
-├── README.md                          # This file
-├── requirements.txt                   # Dependencies
-├── setup.py                          # Package installation
-├── run_complete_project.py           # ONE-COMMAND FULL EXECUTION
-├── quick_process.py                  # Quick data processing
-├── quick_train.py                    # Quick model training
-├── visualize_results.py              # Generate visualizations
-│
-├── config/
-│   └── config.yaml                   # All hyperparameters
-│
-├── data/
-│   ├── raw/                          # Downloaded datasets (auto-created)
-│   │   ├── time_series_covid19_confirmed_global.csv
-│   │   ├── time_series_covid19_deaths_global.csv
-│   │   └── Global_Mobility_Report.csv
-│   ├── processed/                    # Cleaned & merged data (auto-created)
-│   │   ├── covid_cleaned.csv
-│   │   ├── mobility_cleaned.csv
-│   │   ├── master_dataset_national.csv
-│   │   └── features_full.csv
-│   └── external/                     # Weather, population data (auto-created)
-│       ├── india_demographics.csv
-│       └── india_weather.csv
-│
-├── notebooks/                        # 8 analysis notebooks
-│   ├── 01_eda_covid_data.ipynb       # COVID temporal patterns
-│   ├── 02_mobility_analysis.ipynb    # Mobility correlation analysis
-│   ├── 03_feature_engineering.ipynb   # Feature creation
-│   ├── 04_model_baseline.ipynb       # Prophet model
-│   ├── 05_model_lstm.ipynb           # PyTorch LSTM with attention
-│   ├── 06_model_xgboost.ipynb        # XGBoost with tuning
-│   ├── 07_ensemble_final.ipynb       # Ensemble & evaluation
-│   └── 08_comprehensive_evaluation.ipynb  # Final metrics & tests
-│
-├── src/                              # Production modules
-│   ├── data/
-│   │   ├── downloaders.py            # Download COVID, mobility, weather data
-│   │   ├── cleaners.py               # Clean and preprocess data
-│   │   └── merger.py                 # Merge multiple data sources
-│   ├── features/
-│   │   └── builders.py               # Feature engineering pipeline
-│   ├── models/
-│   │   ├── prophet_model.py          # Prophet forecasting model
-│   │   ├── lstm_model.py             # PyTorch LSTM model
-│   │   ├── xgboost_model.py          # XGBoost model
-│   │   └── ensemble.py               # Ensemble model
-│   └── evaluation/
-│       └── metrics.py                # Evaluation metrics and validation
-│
-├── scripts/                          # CLI tools
-│   ├── download_data.py              # One-command data download
-│   └── train_models.py               # Train all models
-│
-├── tests/                            # Unit tests
-│   └── test_*.py                     # Test modules
-│
-├── models/                           # Saved models (auto-created)
-│   ├── prophet_model.pkl
-│   ├── lstm_model.pt
-│   ├── xgboost_model.json
-│   └── ensemble_weights.json
-│
-└── reports/                          # Outputs (auto-created)
-    └── figures/                      # All visualizations
-        ├── 01_eda_summary.png
-        ├── final_results.png
-        └── final_model_results.png
-
+<img width="797" height="1398" alt="image" src="https://github.com/user-attachments/assets/95785159-8286-4826-b3c0-b5b7254a7688" />
 
 
 How to Run This Project
